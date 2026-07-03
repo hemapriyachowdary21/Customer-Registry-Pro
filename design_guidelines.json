@@ -1,0 +1,90 @@
+{
+  "project_name": "Customer Registry Pro",
+  "theme": "dark",
+  "archetype": "4 (Swiss & High-Contrast - Dark Mode Adaptation)",
+  "aesthetic": "Minimal, elegant, enterprise-grade, premium, modern, clean, highly professional.",
+  "typography": {
+    "headings": "Manrope",
+    "body": "Plus Jakarta Sans",
+    "mono": "JetBrains Mono",
+    "notes": "Avoid Inter/Roboto. Use Manrope for a thick, geometric, yet highly accessible enterprise feel for headings. Use Plus Jakarta Sans for dense data tables and body text for readability. Both available via Google Fonts."
+  },
+  "colors": {
+    "background_base": "#0A0E17",
+    "background_surface": "#141A27",
+    "background_surface_elevated": "#1E293B",
+    "glass_surface": "rgba(20, 26, 39, 0.7)",
+    "primary": "#2563EB",
+    "primary_hover": "#3B82F6",
+    "primary_muted": "rgba(37, 99, 235, 0.15)",
+    "text_main": "#F8FAFC",
+    "text_muted": "#94A3B8",
+    "border": "#1E293B",
+    "border_highlight": "#334155",
+    "success": "#10B981",
+    "warning": "#F59E0B",
+    "error": "#EF4444",
+    "info": "#3B82F6"
+  },
+  "spacing": {
+    "general": "Generous container padding (p-6, p-8) to ensure 'lots of whitespace'.",
+    "components": "Dense inner component spacing (gap-4, gap-6) for 'Control Room' grid layout.",
+    "layout_grid": "Grid-cols-1 md:grid-cols-3 lg:grid-cols-4 or 12-column bento box approach for dashboards."
+  },
+  "shadows": {
+    "soft_base": "0 4px 20px -2px rgba(0, 0, 0, 0.4)",
+    "hover_lift": "0 10px 30px -5px rgba(0, 0, 0, 0.5)",
+    "glass": "0 8px 32px 0 rgba(0, 0, 0, 0.3)"
+  },
+  "radii": {
+    "card": "16px",
+    "modal": "20px",
+    "button": "8px",
+    "input": "8px",
+    "badge": "9999px"
+  },
+  "components": {
+    "card": "Use subtle 1px borders (#1E293B) with bg-[#141A27] and rounded-[16px]. Apply soft inner drop-shadows. On interactive cards, apply hover:-translate-y-1 hover:shadow-[0_10px_30px_-5px_rgba(0,0,0,0.5)] transition-all duration-300.",
+    "hero_card": "Top KPI or Welcome cards can use subtle gradients: bg-gradient-to-br from-blue-900/30 to-[#141A27] border-blue-900/50.",
+    "sidebar": "Fixed left, bg-[#0A0E17] (matches base to feel cardless) or integrated deeply. Highlight active link with subtle bg-blue-900/30 and blue left border.",
+    "header": "Top nav must be glassmorphism: backdrop-blur-xl bg-[#0A0E17]/70 border-b border-[#1E293B]. Sticky top.",
+    "table": "Shadcn UI table. Use Plus Jakarta Sans. Hover states on rows (hover:bg-[#1E293B]/50). Sticky header with backdrop blur.",
+    "kanban": "Swimlane columns bg-[#0A0E17]/50. Cards bg-[#141A27] border border-[#1E293B] cursor-grab rounded-[16px]. Hover ring primary.",
+    "button": "Primary: bg-[#2563EB] text-white hover:bg-[#3B82F6]. Secondary: border border-[#334155] text-[#F8FAFC] hover:bg-[#1E293B]. Rounded-lg.",
+    "inputs": "bg-[#0A0E17] border-[#334155] text-white focus:ring-2 focus:ring-[#2563EB] focus:border-transparent rounded-lg.",
+    "charts": "Recharts with dark mode tooltips (bg-[#141A27] border-[#1E293B]). Use primary blue, success green, warning orange, error red for chart series."
+  },
+  "motion": {
+    "hover": "transition-all duration-300 ease-out",
+    "modal": "framer-motion zoom-in (initial opacity 0 scale 0.95, animate opacity 1 scale 1)",
+    "drawer": "slide-in from right (for customer profiles)"
+  },
+  "icons_and_assets": {
+    "icon_library": "lucide-react (default) or @phosphor-icons/react for premium duotone/regular weights.",
+    "image_urls": {
+      "avatars": [
+        "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBoZWFkc2hvdCUyMHBvcnRyYWl0fGVufDB8fHx8MTc4MzA2OTg5OXww&ixlib=rb-4.1.0&q=85",
+        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwzfHxwcm9mZXNzaW9uYWwlMjBoZWFkc2hvdCUyMHBvcnRyYWl0fGVufDB8fHx8MTc4MzA2OTg5OXww&ixlib=rb-4.1.0&q=85",
+        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwyfHxwcm9mZXNzaW9uYWwlMjBoZWFkc2hvdCUyMHBvcnRyYWl0fGVufDB8fHx8MTc4MzA2OTg5OXww&ixlib=rb-4.1.0&q=85",
+        "https://images.pexels.com/photos/26872232/pexels-photo-26872232.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+      ],
+      "auth_background": "https://images.unsplash.com/photo-1633259584604-afdc243122ea?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NjV8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMGRhcmslMjBnZW9tZXRyaWMlMjBiYWNrZ3JvdW5kfGVufDB8fHxibHVlfDE3ODMwOTg3OTJ8MA&ixlib=rb-4.1.0&q=85",
+      "empty_states": "Use Lucide icons scaled up with low opacity (text-slate-700) instead of illustrations for a cleaner, high-end SaaS feel."
+    }
+  },
+  "testing_attributes": {
+    "rule": "All interactive and key informational elements MUST include a data-testid attribute.",
+    "convention": "kebab-case, role-based. Examples: data-testid='login-submit-button', data-testid='sidebar-nav-dashboard', data-testid='kanban-ticket-card'."
+  },
+  "instructions_to_main_agent": [
+    "Configure Tailwind with the provided color hex codes. Extend the tailwind theme explicitly.",
+    "Set the global background to #0A0E17 and text to #F8FAFC in index.css.",
+    "Install Google Fonts 'Manrope' and 'Plus Jakarta Sans'. Apply Manrope to headings (h1-h6) and Plus Jakarta Sans to body/sans.",
+    "Construct the Sidebar Navigation with the requested links: Dashboard, Customers, Complaints, Support Tickets, Interactions, Reports, Analytics, Notifications, Settings, Help Center, Logout.",
+    "Construct the Top Navigation with Global Search, Notifications, Theme Toggle, Profile, and Quick Add.",
+    "Ensure all cards use rounded-[16px] or rounded-2xl to match the requested 16-20px radius.",
+    "Use Shadcn UI for dropdowns, selects, tables, drawers (Sheet), and dialogs. Strip out their default white-borders and use the dark #1E293B border instead.",
+    "Dashboard KPIs and charts MUST fit in a grid layout (bento box style). Do not leave jagged bottoms.",
+    "Ensure micro-interactions are present (e.g., hover states on rows, button scale on click, card lifts)."
+  ]
+}
