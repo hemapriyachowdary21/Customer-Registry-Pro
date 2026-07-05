@@ -596,7 +596,7 @@ async def dashboard_activity(user: dict = Depends(get_current_user)):
 
 # ---------------- Search ----------------
 @api.get("/search")
-async def global_search(q: str, user: dict = Depends(get_current_user)):
+async def global_search(q: Optional[str] = "", user: dict = Depends(get_current_user)):
     if not q or len(q) < 2:
         return {"customers": [], "complaints": [], "tickets": []}
     cust = await db.customers.find(
